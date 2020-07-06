@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-like',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./like.component.css']
 })
 export class LikeComponent implements OnInit {
-  likes = 0;
+  @Input() likes = 0;
   constructor() { }
 
   ngOnInit(): void {

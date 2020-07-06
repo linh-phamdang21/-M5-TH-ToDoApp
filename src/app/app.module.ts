@@ -14,7 +14,6 @@ import { ProgressBarComponent } from './progress-bar/progress-bar.component';
     AppComponent,
     HackerNewComponent,
     LikeComponent,
-    LikeComponent,
     NameCardComponent,
     ProgressBarComponent
   ],

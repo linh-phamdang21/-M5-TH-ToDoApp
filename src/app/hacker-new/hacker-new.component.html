@@ -28,7 +28,7 @@
         <a href="{{art.url}}" target="_blank">{{art.title}}</a>
       </td>
       <td style="width: 200px">
-        <app-like></app-like>
+        <app-like [likes]="art.like"></app-like>
       </td>
     </tr>
 </table>
