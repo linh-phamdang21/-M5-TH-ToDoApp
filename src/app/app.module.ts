@@ -6,13 +6,15 @@ import { HackerNewComponent } from './hacker-new/hacker-new.component';
 import { AppRoutingModule } from './app-routing.module';
 import {FormsModule} from '@angular/forms';
 import { LikeComponent } from './like/like.component';
+import { NameCardComponent } from './name-card/name-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HackerNewComponent,
     LikeComponent,
-    LikeComponent
+    LikeComponent,
+    NameCardComponent
   ],
   imports: [
     BrowserModule,
