@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import {FormsModule} from '@angular/forms';
 import { LikeComponent } from './like/like.component';
 import { NameCardComponent } from './name-card/name-card.component';
+import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { NameCardComponent } from './name-card/name-card.component';
     HackerNewComponent,
     LikeComponent,
     LikeComponent,
-    NameCardComponent
+    NameCardComponent,
+    ProgressBarComponent
   ],
   imports: [
     BrowserModule,
