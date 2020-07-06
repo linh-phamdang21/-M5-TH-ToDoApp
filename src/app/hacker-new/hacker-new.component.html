@@ -1,0 +1,51 @@
+<!--<p>hacker-new works!</p>-->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>New</title>
+</head>
+<body>
+<h2>Today's article</h2>
+<hr>
+<div>
+  <a href="{{article.url}}" target="_blank">{{article.title}}</a>
+</div>
+<!--<div>-->
+<!--  <textarea [(ngModel)]="article.title" cols="70" id="article-title"></textarea><br>-->
+<!--  <textarea [(ngModel)]="article.url" cols="70" id="article-url"></textarea><br>-->
+<!--  <input (click)="updateArticle()" type="button" value="Update">-->
+<!--</div>-->
+
+
+
+<table *ngFor="let art of articles">
+    <tr>
+      <td style="width: 500px">
+        <a href="{{art.url}}" target="_blank">{{art.title}}</a>
+      </td>
+      <td style="width: 200px">
+        <app-like></app-like>
+      </td>
+    </tr>
+</table>
+<div class="container-fluid">
+  <div class="form-group">
+    <label>Title: </label>
+    <textarea [(ngModel)]="title" cols="70" id="add-article-title" class="form-control"></textarea>
+  </div>
+  <div class="form-group">
+    <label>URL: </label>
+    <textarea [(ngModel)]="url" cols="70" id="add-article-url" class="form-control"></textarea>
+  </div>
+<!--  <input type="button" value="Add" class="btn btn-primary" (click)="addArticle()">-->
+</div>
+<button (click)="addArticle()">Add</button>
+<hr>
+</body>
+</html>
+
+
