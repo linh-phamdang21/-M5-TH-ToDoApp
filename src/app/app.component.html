@@ -26,11 +26,12 @@
   <h3>
     {{title}}!
   </h3>
-  <nav>
-    <a routerLink="/new">HackerNew</a>
-  </nav>
-  <router-outlet></router-outlet>
-  <app-name-card cardName="Phạm Đăng Linh" email="ph.danglinh214@gmail.com" phone="035 671 2635"></app-name-card>
-  <br>
-  <app-progress-bar width="65"></app-progress-bar>
+  <div style="width: 100px; float: left; margin-left: 100px; margin-top: 100px">
+    <app-navbar></app-navbar>
+  </div>
+  <div style="width: 800px; float: left; margin-left: 100px; margin-top: 100px">
+    <router-outlet></router-outlet>
+  </div>
+<!--  <app-name-card cardName="Phạm Đăng Linh" email="ph.danglinh214@gmail.com" phone="035 671 2635"></app-name-card>-->
+<!--  <app-progress-bar width="65"></app-progress-bar>-->
 </div>
